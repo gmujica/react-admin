@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { Suspense, useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import * as FaIcons from 'react-icons/fa'
 import * as AiIcons from 'react-icons/ai'
+import { SideBarData } from './SideBarData'
+import SubMenu from './SubMenu'
 
 
 const Nav = styled.div`
@@ -59,6 +61,9 @@ const SideBar = () => {
                     <NavIcon to='#'>
                         <AiIcons.AiOutlineClose onClick={showSidebar} />
                     </NavIcon>
+                    {SideBarData.map((item, index) => {
+                        return <SubMenu item={item} key={index} />
+                    })}
                 </SideBarWrap>
             </SideBarNav>
         </>
