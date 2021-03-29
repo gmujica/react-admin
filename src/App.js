@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css';
 import { Overview, Users, revenue } from './pages/Overview'
 import { Reports, ReportsOne, ReportsTwo, ReportsThree } from './pages/Reports'
+import Team from './pages/Team'
 import Home from './pages/Home';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path='/reports/reports1' exact component={ReportsOne} />
         <Route path='/reports/reports2' exact component={ReportsTwo} />
         <Route path='/reports/reports3' exact component={ReportsThree} />
+        <Route path='/team' exact component={Team} />
       </Switch>
     </Router>
   );
