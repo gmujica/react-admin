@@ -3,8 +3,10 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css';
 import { Overview, Users, revenue } from './pages/Overview'
 import { Reports, ReportsOne, ReportsTwo, ReportsThree } from './pages/Reports'
+import { Messages, MessagesOne, MessagesTwo } from './pages/Messages'
 import Team from './pages/Team'
-import Home from './pages/Home';
+import Home from './pages/Home'
+import Products from './pages/Products'
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
         <Route path='/reports/reports1' exact component={ReportsOne} />
         <Route path='/reports/reports2' exact component={ReportsTwo} />
         <Route path='/reports/reports3' exact component={ReportsThree} />
+        <Route path='/products' exact component={Products} />
         <Route path='/team' exact component={Team} />
+        <Route path='/messages' exact component={Messages} />
       </Switch>
     </Router>
   );
