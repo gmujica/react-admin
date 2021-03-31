@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css';
 import { Overview, Users, revenue } from './pages/Overview'
 import { Reports, ReportsOne, ReportsTwo, ReportsThree } from './pages/Reports'
-import { Messages, MessagesOne, MessagesTwo } from './pages/Messages'
+import { Messages, Message1, Message2 } from './pages/Messages'
 import Team from './pages/Team'
 import Home from './pages/Home'
 import Products from './pages/Products'
@@ -24,6 +24,8 @@ function App() {
         <Route path='/products' exact component={Products} />
         <Route path='/team' exact component={Team} />
         <Route path='/messages' exact component={Messages} />
+        <Route path='/messages/message1' exact component={Message1} />
+        <Route path='/messages/message2' exact component={Message2} />
       </Switch>
     </Router>
   );
