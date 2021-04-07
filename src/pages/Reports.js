@@ -1,9 +1,9 @@
-import React from 'react';
+import CardContainer from '../components/CardContainer'
 
 export const Reports = () => {
   return (
     <div className='reports'>
-      <h1>Reports</h1>
+      <CardContainer title={'Reports'} />
     </div>
   );
 };
@@ -11,7 +11,7 @@ export const Reports = () => {
 export const ReportsOne = () => {
   return (
     <div className='reports'>
-      <h1>Reports/reports1</h1>
+      <CardContainer title={'Reports/reports1'} />
     </div>
   );
 };
@@ -19,7 +19,7 @@ export const ReportsOne = () => {
 export const ReportsTwo = () => {
   return (
     <div className='reports'>
-      <h1>Reports/reports2</h1>
+      <CardContainer title={'Reports/reports2'} />
     </div>
   );
 };
@@ -27,7 +27,7 @@ export const ReportsTwo = () => {
 export const ReportsThree = () => {
   return (
     <div className='reports'>
-      <h1>Reports/reports3</h1>
+      <CardContainer title={'Reports/reports3'} />
     </div>
   );
 };

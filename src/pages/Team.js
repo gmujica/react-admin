@@ -1,9 +1,10 @@
 import React from 'react'
+import CardContainer from '../components/CardContainer'
 
 const Team = () => {
     return (
         <div className='team'>
-            <h1>Team</h1>
+            <CardContainer title={'Team'} />
         </div>
     )
 }

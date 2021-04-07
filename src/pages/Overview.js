@@ -1,9 +1,10 @@
 import React from 'react'
+import CardContainer from '../components/CardContainer'
 
 export const Overview = () => {
     return (
         <div className='home'>
-            <h1>Overview</h1>
+            <CardContainer title={'Overview'} />
         </div>
     )
 }
@@ -11,7 +12,7 @@ export const Overview = () => {
 export const Users = () => {
     return (
         <div className='home'>
-            <h1>Overvie/Users</h1>
+            <CardContainer title={'Overvie/Users'} />
         </div>
     )
 }
@@ -19,7 +20,7 @@ export const Users = () => {
 export const revenue = () => {
     return (
         <div className='home'>
-            <h1>Overview/revenue</h1>
+            <CardContainer title={'Overview/revenue'} />
         </div>
     )
 }

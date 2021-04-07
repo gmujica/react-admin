@@ -7,7 +7,7 @@ import { IconContext } from 'react-icons/lib'
 import { Nav, NavIcon, SideBarNav, SideBarWrap } from './style'
 
 const SideBar = () => {
-    const [sidebar, setSidebar] = useState(false)
+    const [sidebar, setSidebar] = useState(true)
 
     const showSidebar = () => setSidebar(!sidebar)
 

@@ -1,9 +1,10 @@
 import React from 'react'
+import CardContainer from '../components/CardContainer'
 
 const Products = () => {
     return (
         <div className='products'>
-            <h1>Products</h1>
+            <CardContainer title={'Products'} />
         </div>
     )
 }

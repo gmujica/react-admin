@@ -1,10 +1,10 @@
 import React from 'react'
-
+import CardContainer from '../components/CardContainer'
 
 const Home = () => {
     return (
         <div className='home'>
-            <h1>Home</h1>
+            <CardContainer title={'Home'} />
         </div>
     )
 }
