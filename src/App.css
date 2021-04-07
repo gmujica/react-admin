@@ -11,7 +11,8 @@
 .reports,
 .products,
 .team,
-.reports {
+.reports,
+.messages {
   display: flex;
   height: 90vh;
   align-items: center;
