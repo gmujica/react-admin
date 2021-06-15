@@ -12,10 +12,10 @@ import Login from './pages/Login'
 function App() {
   return (
     <Router>
+      <SideBar />
       <Switch>
-        <Route path='/login' exact component={Login} />
-        <SideBar />
           <Route path='/' exact component={Home} />
+          <Route path='/login' exact component={Login} />
           <Route path='/overview' exact component={Overview} />
           <Route path='/overview/users' exact component={Users} />
           <Route path='/overview/revenue' exact component={revenue} />
